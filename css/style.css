@@ -56,3 +56,35 @@ body {
     opacity: 1;
     transition: 1s;
 }
+
+ul {
+    list-style-type: none;
+    background-color: rgba(150, 150, 150, 0.5);
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+li a {
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+    color: white;
+}
+
+li {
+    float: left;
+}
+
+@media all and (max-width: 600px) {
+    #wrapper {
+        gap: 5px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header" 
+        "nav"
+        "aside"
+        "footer" 
+        "article";
+}
+}
