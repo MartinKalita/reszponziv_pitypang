@@ -6,6 +6,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: right;
     margin: 40px;
+    color: white;
+    font-size: 1.4em;
 }
 
 #wrapper {
@@ -19,22 +21,38 @@ body {
 
 #header {
     grid-area: header;
+    background-image: url(../img/dandelion.jpg);
 }
 #nav {
     grid-area: nav;
+    background-image: url(../img/dand2.jpg);
+
 }
 #aside {
     grid-area: aside;
+    background-image: url(../img/dand3.jpg);
+
 }
 #footer {
     grid-area: footer;
+    background-image: url(../img/dandy.gif);
+
 }
 #article {
     grid-area: article;
+    background-image: url(../img/dandy2.gif);
+
 }
 #wrapper > div{
     background-color: burlywood;
     border-radius: 5px;
     padding: 10px;
     height: 40vh;
+    opacity: 0.5;
+    background-size: cover;
+
+}
+#wrapper > div:hover{
+    opacity: 1;
+    transition: 1s;
 }
