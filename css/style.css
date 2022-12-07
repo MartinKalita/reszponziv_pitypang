@@ -1,0 +1,7 @@
+#wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: 
+    "a b b"
+    "c d e";
+}
