@@ -1,7 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+    margin: 40px;
+}
+
 #wrapper {
+    gap: 5px;
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
-    "a b b"
-    "c d e";
+    "header nav nav"
+    "aside footer article";
+}
+
+#header {
+    grid-area: header;
+}
+#nav {
+    grid-area: nav;
+}
+#aside {
+    grid-area: aside;
+}
+#footer {
+    grid-area: footer;
+}
+#article {
+    grid-area: article;
+}
+#wrapper > div{
+    background-color: burlywood;
+    border-radius: 5px;
+    padding: 10px;
+    height: 40vh;
 }
